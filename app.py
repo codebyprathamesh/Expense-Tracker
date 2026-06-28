@@ -59,8 +59,6 @@ with st.expander("Clothing",icon="👕"):
     footwear=st.number_input("Enter Montly Footwear Expense")
     Accesories=st.number_input("Enter Montly Accessories Expense")
     Clothing=clothes+footwear+Accesories
-    
-
 
 Total_Expense=Living_Essentials+Home_care+Entertainment+Travel+Clothing+Education+health
 if st.button("Calculate"):

@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 
 
-
+st.set_page_config(page_icon="💸",page_title="Expense Tracker")
 st.title("Expense Tracker 🫰🏻💸")
 st.sidebar.title("Expense Tracker")
 with st.expander("Monthly Income",icon="💰"):

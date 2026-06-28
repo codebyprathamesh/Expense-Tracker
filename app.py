@@ -159,8 +159,9 @@ if st.button("Calculate"):
 
                     
         with tab2:
-            col1,col2=st.columns(2)
+          
             st.markdown("## Visual Representation of expenses")
+            col1,col2=st.columns(2)
            
             with col1:
                 fig1, ax = plt.subplots()

@@ -162,10 +162,10 @@ if st.button("Calculate"):
                     
         with tab2:
             col1,col2=st.columns(2)
+            st.markdown("## Visual Representation of expenses")
            
             with col1:
                 fig1, ax = plt.subplots()
-                ax.set_title("Visual Representation Of Your Monthly Expenses.")
                 ax.pie(values_filtered, labels=labels_filtered, autopct="%.2f%%")
                 st.pyplot(fig1)
             with col2:

@@ -185,15 +185,15 @@ if st.button("Calculate"):
 
             st.markdown(f"""
                ### Insights 
-               *  You have high monthly expense in  {labels_filtered[max_idx] } of about {values_filtered[max_idx]} which is about {(max_val/Total_Expense)*100} % of your Total Expense.
-               *  You have least monthly expense in {labels_filtered[min_idx]} which is about {(min_val/Total_Expense)*100}% of your Total Expense.
+               *  You have high monthly expense in  {labels_filtered[max_idx]:.2f} of about {values_filtered[max_idx]} which is about {(max_val/Total_Expense)*100} % of your Total Expense.
+               *  You have least monthly expense in {labels_filtered[min_idx]:.2f} which is about {(min_val/Total_Expense)*100}% of your Total Expense.
                *  You have saved Rs.{Savings} in this month.""")
             if(Savings_percentage>30):
                 st.markdown("* Excellent Saving this month! ")
             for i in range(len(values_filtered)):
                 cat_per=(values_filtered[i]/Total_Expense)*100
                 if int(cat_per)>50:
-                    st.markdown(f"* A significant portion of your expenses went to {labels_filtered[i]} and is Rs. {values_filtered[i]},which is about {cat_per:.2f}% of your total expenses.")
+                    st.markdown(f"* A significant portion of your expenses went to {labels_filtered[i]} and is Rs. {values_filtered[i]:.2f},which is about {cat_per:.2f}% of your total expenses.")
                 if Total_Expense>income*0.9:
                     st.markdown("* Your Expenses are very  close to your income")
 
